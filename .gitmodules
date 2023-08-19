@@ -1,0 +1,3 @@
+[submodule "maplelibs"]
+	path = maplelibs
+	url = git@github.com:matteodv99tn/maplelibs.git
