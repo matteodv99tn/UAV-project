@@ -1,6 +1,7 @@
 
 # Build folder of Cxx project
 build/
+models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
