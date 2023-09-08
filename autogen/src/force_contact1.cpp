@@ -34,10 +34,10 @@ Vector force_contact1(VectorRef x) {
   const float_t t2 = t1 * omega__body;
   const float_t t4 = cos(theta__body);
   const float_t t5 = t4 * omega__body;
-  const float_t t8 = vy__body * pos__x__contact;
-  const float_t t9 = vx__body * pos__y__contact;
-  const float_t t14 = vx__body * pos__x__contact;
-  const float_t t15 = vy__body * pos__y__contact;
+  const float_t t8 = pos__x__contact * vy__body;
+  const float_t t9 = pos__y__contact * vx__body;
+  const float_t t14 = pos__x__contact * vx__body;
+  const float_t t15 = pos__y__contact * vy__body;
   const float_t t20 = omega__body * omega__body;
   const float_t t21 = pos__x__contact * pos__x__contact;
   const float_t t23 = pos__y__contact * pos__y__contact;
@@ -54,11 +54,11 @@ Vector force_contact1(VectorRef x) {
   const float_t t47 = 0.1e1 / (0.1e-3 + t45);
   const float_t t48 = t47 * gamma__4;
   const float_t tmp__1 =
-      -t48 * t30 * (t2 * pos__x__contact + t5 * pos__y__contact - vx__body);
+      -t48 * t30 * (pos__x__contact * t2 + pos__y__contact * t5 - vx__body);
   const float_t tmp__2 =
-      -t47 * (t2 * pos__y__contact - t5 * pos__x__contact - vy__body) * t30 *
-      gamma__4;
-  const float_t tmp__3 = -t48 * t30 * (-t4 * t42 * omega__body - t8 + t9);
+      -t48 * t30 * (pos__y__contact * t2 - pos__x__contact * t5 - vy__body);
+  const float_t tmp__3 =
+      -t47 * t30 * gamma__4 * (-t4 * t42 * omega__body - t8 + t9);
 
   func(0) = tmp__1;
   func(1) = tmp__2;

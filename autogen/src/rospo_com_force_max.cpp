@@ -12,13 +12,8 @@ Vector rospo_com_force_max() {
 
   Vector func = Vector::Zero(2);
 
-  const float_t t1 = Omega__ref * Omega__ref;
-  const float_t t2 = t1 * k__l;
-  const float_t tmp__1 = 4 * t2;
-  const float_t t3 = pos__x__turr * pos__x__turr;
-  const float_t t4 = pos__y__turr * pos__y__turr;
-  const float_t t6 = sqrt(t3 + t4);
-  const float_t tmp__2 = 4 * t6 * t2;
+  const float_t tmp__1 = Uvc_max;
+  const float_t tmp__2 = TUvc_max;
 
   func(0) = tmp__1;
   func(1) = tmp__2;

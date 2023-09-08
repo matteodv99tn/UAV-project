@@ -85,7 +85,7 @@ Matrix rospo_com_force_dx(VectorRef x) {
       (pos__x__turr * tmp__1_3 - pos__y__turr * tmp__2_3) * F__2;
   const float_t tmp__3_5 = -tmp__2_5 * pos__x__turr - tmp__1_5 * pos__y__turr;
   const float_t tmp__3_6 =
-      (-pos__x__turr * tmp__1_5 + pos__y__turr * tmp__2_5) * F__3;
+      -(pos__x__turr * tmp__1_5 - pos__y__turr * tmp__2_5) * F__3;
   const float_t tmp__3_7 = -tmp__2_7 * pos__x__turr + tmp__1_7 * pos__y__turr;
   const float_t tmp__3_8 =
       -(pos__x__turr * tmp__1_7 + pos__y__turr * tmp__2_7) * F__4;

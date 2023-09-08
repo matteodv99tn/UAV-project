@@ -17,7 +17,7 @@ Vector motor_sys_mdl(VectorRef x, VectorRef u) {
 
   const float_t t1 = Omega * Omega;
   const float_t t7 = 0.1e1 / kv;
-  const float_t tmp__1 = t7 / J * (-kv * k__tau * t1 + ii);
+  const float_t tmp__1 = t7 / J * (-kv * t1 * k__tau + ii);
   const float_t tmp__2 = t7 / L * ((-R * ii + v) * kv - Omega);
 
   func(0) = tmp__1;
@@ -39,7 +39,7 @@ Matrix motor_sys_mdl_dx(VectorRef x, VectorRef u) {
   const float_t tmp__1_2 = t5 * t1;
   const float_t t6 = 0.1e1 / L;
   const float_t tmp__2_1 = -t5 * t6;
-  const float_t tmp__2_2 = -R * t6;
+  const float_t tmp__2_2 = -t6 * R;
 
   func_dx(0, 0) = tmp__1_1;
   func_dx(0, 1) = tmp__1_2;

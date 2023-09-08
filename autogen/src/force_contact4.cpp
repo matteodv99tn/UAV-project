@@ -30,11 +30,11 @@ Vector force_contact4(VectorRef x) {
 
   Vector func = Vector::Zero(3);
 
-  const float_t t1 = vy__body * pos__x__contact;
-  const float_t t2 = vx__body * pos__y__contact;
+  const float_t t1 = pos__x__contact * vy__body;
+  const float_t t2 = pos__y__contact * vx__body;
   const float_t t5 = cos(theta__body);
-  const float_t t8 = vx__body * pos__x__contact;
-  const float_t t9 = vy__body * pos__y__contact;
+  const float_t t8 = pos__x__contact * vx__body;
+  const float_t t9 = pos__y__contact * vy__body;
   const float_t t12 = sin(theta__body);
   const float_t t15 = omega__body * omega__body;
   const float_t t16 = pos__x__contact * pos__x__contact;
@@ -57,7 +57,8 @@ Vector force_contact4(VectorRef x) {
       t47 * (pos__x__contact * t27 + pos__y__contact * t29 + vx__body) * t26;
   const float_t tmp__2 =
       t47 * (pos__y__contact * t27 - pos__x__contact * t29 + vy__body) * t26;
-  const float_t tmp__3 = t47 * (t5 * t42 * omega__body - t1 + t2) * t26;
+  const float_t tmp__3 =
+      t47 * t25 * gamma__4 * (t5 * t42 * omega__body - t1 + t2);
 
   func(0) = tmp__1;
   func(1) = tmp__2;

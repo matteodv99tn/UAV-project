@@ -12,8 +12,8 @@ Vector rospo_com_force_ub() {
 
   Vector func = Vector::Zero(8);
 
-  const float_t t53 = Omega__ref * Omega__ref;
-  const float_t tmp__1 = t53 * k__l;
+  const float_t t1 = Omega__ref * Omega__ref;
+  const float_t tmp__1 = t1 * k__l;
   const float_t tmp__2 = phi__max;
   const float_t tmp__3 = tmp__1;
   const float_t tmp__4 = phi__max;

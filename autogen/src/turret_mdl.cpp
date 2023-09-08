@@ -45,7 +45,7 @@ Matrix turret_mdl_dx(VectorRef x, VectorRef u) {
   const float_t tmp__1_2 = t5 * t1;
   const float_t t6 = 0.1e1 / L;
   const float_t tmp__2_1 = -t5 * t6;
-  const float_t tmp__2_2 = -R * t6;
+  const float_t tmp__2_2 = -t6 * R;
 
   func_dx(0, 0) = tmp__1_1;
   func_dx(0, 1) = tmp__1_2;

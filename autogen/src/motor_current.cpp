@@ -13,8 +13,8 @@ Vector motor_current(VectorRef x) {
 
   Vector func = Vector::Zero(1);
 
-  const float_t t1 = Omega * Omega;
-  const float_t tmp__1 = kv * k__tau * t1;
+  const float_t t13 = Omega * Omega;
+  const float_t tmp__1 = kv * t13 * k__tau;
 
   func(0) = tmp__1;
 
@@ -26,7 +26,7 @@ Matrix motor_current_dx(VectorRef x) {
 
   Matrix func_dx = Matrix::Zero(1, 1);
 
-  const float_t tmp__1_1 = 2 * Omega * k__tau * kv;
+  const float_t tmp__1_1 = 2 * k__tau * Omega * kv;
 
   func_dx(0, 0) = tmp__1_1;
 
