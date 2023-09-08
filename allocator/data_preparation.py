@@ -4,12 +4,13 @@ import os
 
 from sklearn.preprocessing import MinMaxScaler
 
-from .config import x_lb, x_ub, u_lb, u_ub, F_lb, F_ub
+from allocator.config import x_lb, x_ub, u_lb, u_ub, F_max
 
 x_data_scaler = MinMaxScaler()
 y_data_scaler = MinMaxScaler()
+F_ub = np.array([F_max[0], F_max[0], F_max[1]])
 
-x_data_scaler.fit(np.stack((np.concatenate((x_lb, F_lb)),
+x_data_scaler.fit(np.stack((np.concatenate((x_lb, np.array([0,0,0]))),
                             np.concatenate((x_ub, F_ub)))))
 y_data_scaler.fit(np.stack((u_lb, u_ub)))
 

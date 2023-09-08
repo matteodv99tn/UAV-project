@@ -38,11 +38,13 @@ class RKTableu:
                           function:     Function,
                           x0:           np.ndarray,
                           u:            np.ndarray,
-                          dt:           float
+                          dt:           float,
+                          jacobian:     bool = False
                           ) -> np.ndarray:
         x_next = x0.copy()
-        jac_dx = np.eye(x0.size)
-        jac_du = np.zeros((x0.size, u.size))
+        if jacobian:
+            jac_dx = np.eye(x0.size)
+            jac_du = np.zeros((x0.size, u.size))
         K = np.zeros((self.order, x0.size))
 
         for i in range(self.order):
@@ -52,27 +54,38 @@ class RKTableu:
 
             K[i] = function.fun(x, u)
             x_next += dt * self.b[i] * K[i]
-            jac_dx += dt * self.b[i] * function.fun_dx(x, u)
-            jac_du += dt * self.b[i] * function.fun_du(x, u)
+            if jacobian:
+                jac_dx += dt * self.b[i] * function.fun_dx(x, u)
+                jac_du += dt * self.b[i] * function.fun_du(x, u)
 
-        return x_next, jac_dx, jac_du
+        if jacobian:
+            return x_next, jac_dx, jac_du
+        return x_next
 
     def integrate(self,
                   function:     Function,
                   x0:           np.ndarray,
                   u:            np.ndarray,
                   dt:           float,
-                  N:            int
+                  N:            int,
+                  jacobian:     bool = True
                   ) -> np.ndarray:
         x = x0.copy()
         dx_du = np.zeros((x0.size, u.size))
         h = float(dt / N)
 
         for i in range(N):
-            x, jac_dx, jac_du = self.onestep_integrate(function, x, u, h)
-            dx_du += jac_dx @ dx_du + jac_du
+            if jacobian:
+                x, jac_dx, jac_du = self.onestep_integrate(function, x, u, h,
+                                                           jacobian=jacobian)
+                dx_du += jac_dx @ dx_du + jac_du
+            else:
+                x = self.onestep_integrate(function, x, u, h,
+                                           jacobian=jacobian)
 
-        return x, dx_du
+        if jacobian:
+            return x, dx_du
+        return x
 
 
 RK1 = RKTableu(a=np.array([[0]]).astype(np.float64),

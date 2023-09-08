@@ -2,10 +2,6 @@ import numpy as np
 import sys
 import os
 
-filedir = os.path.dirname(__file__)
-parentdir = os.path.normpath(os.path.join(filedir, ".."))
-sys.path.insert(0, parentdir)
-
 from utils.ode_integration import RK1, RK4, Function
 
 from autogen.lib.motor_sys_lb_x import motor_sys_lb_x
@@ -21,11 +17,13 @@ from autogen.lib.motor_sys_mdl import \
 from autogen.lib.motor_force_mdl import \
         motor_force_mdl, \
         motor_force_mdl_dx
+from data import dt_controller
 
 
+filedir = os.path.dirname(__file__)
 MODEL_DIR = os.path.join(filedir, "models")
 
-dt = float(0.004)
+dt = float(dt_controller)
 Ndt = 3
 ode_solver = RK4
 
