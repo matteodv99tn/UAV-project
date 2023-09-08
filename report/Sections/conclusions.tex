@@ -1,0 +1,12 @@
+\section{Conclusions} \label{sec:conclusions}
+As discussed in the previous section, it can be concluded that using deep neural networks to approximate the optimal allocation law is not feasible, at least with the developed procedure. \\
+The problem of dimensionality will be even higher in case of aerial UAVs, with 3-dimensional space of motion and a higher amount of actuators.
+
+Leaning toward data-driven control methods, interesting could be to develop a reinforcement learning allocator: such technique is based on collected experience by the system itself: this might reduce the exploration of the state space mainly to relevant subspaces, and the learning process is performed online with incremental steps.
+
+As final notes, two points are still open for evaluation:
+\begin{itemize}
+    \item comparing the allocation results with the one provided in the reference paper; in this case the model of the BLDC motor has been developed more in detail, and a review of the presented theory in \cite{rospo} is required; alternatively one could also use a lower-level controller to compute the voltage given the speed reference as in that paper;
+    \item developing a more complex model that takes into account for uncertainties: both high level controller and allocator use at each timestep the values computed by the simulator, so the system is fully observable and behaves deterministically. Interesting should be an approach where the dataset is built from the deterministic model, but testing is carried out by faking measurement comparable with a real world scenario and using state estimators to reconstruct the actual state of the system.
+\end{itemize}
+

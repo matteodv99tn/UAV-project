@@ -1,0 +1,67 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[sorting=none]{biblatex}
+\usepackage{algorithm}
+\usepackage{dsfont}
+% \usepackage{caption}
+% \usepackage{subcaption}
+
+\newcommand{\diff}[2]{\frac{d#1}{d#2}}
+\newcommand{\pdiff}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\matt}[1]{\mathbf{#1}}
+\newcommand{\vett}[1]{\boldsymbol{#1}}
+\newcommand{\dvett}[1]{\dot{\boldsymbol{#1}}}
+\newcommand{\ddvett}[1]{\ddot{\boldsymbol{#1}}}
+\newcommand{\vers}[1]{\hat{\vett{#1}}}
+
+\addbibresource{bibliography.bib}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\renewcommand{\epsilon}{\varepsilon}
+
+\begin{document}
+
+    \title{Neural network approximator for input allocation*\\
+        {\footnotesize \textsuperscript{*}Final project for course \textit{Design Methods for Unmanned Vehicles}, prof.s D. Brunelli, D. Fontanelli, G. Moretti, L. Zaccarian.}
+    }
+
+    \author{
+        \IEEEauthorblockN{Matteo Dalle Vedove}
+        \IEEEauthorblockA{\textit{Department of Industrial Engineering} \\
+            \textit{University of Trento, Italy}\\
+            matteo.dallevedove@studenti.unitn.it
+            }
+        }
+
+
+    \maketitle
+
+    \begin{abstract}
+        With this project I investigated the viability of using deep neural-networks to approximate a optimal allocation law.
+        Tests have been carried out on the ROtor graSPing Omnidirectional (ROSPO) platform \cite{rospo} that provides a simple-enough, yet feature-full, testbed for propeller-driven vehicles.
+        Experiments demonstrates the difficulty in accomplishing such task due to the high dimensionality of the function that needs to be approximated, showing that this approach is not satisfactory.
+    \end{abstract}
+
+    \input{Sections/introduction.tex}
+    \input{Sections/description.tex}
+    \input{Sections/control.tex}
+    \input{Sections/code.tex}
+    \input{Sections/results.tex}
+    \input{Sections/conclusions.tex}
+
+    \printbibliography
+
+
+
+\end{document}
+

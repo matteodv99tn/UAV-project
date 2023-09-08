@@ -1,0 +1,10 @@
+\section{Implementation details} \label{sec:code}
+Implementation-wise, the project has been developed using different tools.
+
+Main symbolic computation has been carried out using the software \textit{Maple} \cite{maple}. With the help of integrated C code generation of the software, an additional library has been developed to convert all symbolic function into \textit{C++} function for faster evaluation, using the \textit{Eigen} \cite{eigen} linear algebra library as backend; furthermore the utility create wrapper code for all functions for the python language using \textit{pybind11} \cite{pybind11}, with a script that automatically creates necessary dynamic libraries.
+
+Numerical evaluations have been carried out in python; optimization problems have been solved using utilities from the \textit{scipy} \cite{scipy} library, while \textit{tensorflow} \cite{tensorflow} has been used to train deep neural-network models.
+
+Deep-learning models tested have been fully-connected neural networks with different amount of hidden layers and corresponding sizes; the chosen activation function for each perceptron is the rectified linear unit (\textit{ReLU}), since it's less prone to the vanishing gradient problem \cite{vanishing}.
+
+All the source code is freely available at \url{https://github.com/matteodv99tn/UAV-project}.
