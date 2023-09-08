@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -flto -shared  -o contact_force_dt4.cpython-310-x86_64-linux-gnu.so CMakeFiles/contact_force_dt4.dir/contact_force_dt4_wrapper.cpp.o CMakeFiles/contact_force_dt4.dir/__/src/contact_force_dt4.cpp.o 

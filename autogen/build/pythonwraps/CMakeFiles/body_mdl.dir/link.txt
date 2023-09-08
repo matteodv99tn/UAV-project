@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -flto -shared  -o body_mdl.cpython-310-x86_64-linux-gnu.so CMakeFiles/body_mdl.dir/body_mdl_wrapper.cpp.o CMakeFiles/body_mdl.dir/__/src/body_mdl.cpp.o 

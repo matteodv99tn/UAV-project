@@ -1,0 +1,7 @@
+#ifndef MAPLE_AUTOGEN_MOTOR_SYS_UB_X_PARAMS_HPP__
+#define MAPLE_AUTOGEN_MOTOR_SYS_UB_X_PARAMS_HPP__
+
+#define i__max 30
+#define Omega__ref 392.6990817
+
+#endif // MAPLE_AUTOGEN_MOTOR_SYS_UB_X_PARAMS_HPP__

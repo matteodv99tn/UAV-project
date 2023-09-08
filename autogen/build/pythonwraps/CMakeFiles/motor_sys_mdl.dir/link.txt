@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -flto -shared  -o motor_sys_mdl.cpython-310-x86_64-linux-gnu.so CMakeFiles/motor_sys_mdl.dir/motor_sys_mdl_wrapper.cpp.o CMakeFiles/motor_sys_mdl.dir/__/src/motor_sys_mdl.cpp.o 

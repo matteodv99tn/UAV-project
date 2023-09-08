@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -flto -shared  -o rospo_com_force.cpython-310-x86_64-linux-gnu.so CMakeFiles/rospo_com_force.dir/rospo_com_force_wrapper.cpp.o CMakeFiles/rospo_com_force.dir/__/src/rospo_com_force.cpp.o 

@@ -1,0 +1,302 @@
+[
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dforce_contact3_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/force_contact3.dir/force_contact3_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/force_contact3_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/force_contact3_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dforce_contact3_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/force_contact3.dir/__/src/force_contact3.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/force_contact3.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/force_contact3.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force.dir/contact_force_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force.dir/__/src/contact_force.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force.dir/rospo_com_force_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force.dir/__/src/rospo_com_force.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dforce_contact4_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/force_contact4.dir/force_contact4_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/force_contact4_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/force_contact4_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dforce_contact4_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/force_contact4.dir/__/src/force_contact4.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/force_contact4.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/force_contact4.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dforce_contact1_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/force_contact1.dir/force_contact1_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/force_contact1_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/force_contact1_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dforce_contact1_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/force_contact1.dir/__/src/force_contact1.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/force_contact1.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/force_contact1.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dforce_contact2_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/force_contact2.dir/force_contact2_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/force_contact2_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/force_contact2_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dforce_contact2_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/force_contact2.dir/__/src/force_contact2.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/force_contact2.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/force_contact2.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_dt4_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force_dt4.dir/contact_force_dt4_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_dt4_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_dt4_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_dt4_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force_dt4.dir/__/src/contact_force_dt4.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force_dt4.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force_dt4.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_lb_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_lb.dir/rospo_com_force_lb_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_lb_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_lb_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_lb_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_lb.dir/__/src/rospo_com_force_lb.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_lb.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_lb.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_current_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_current.dir/motor_current_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_current_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_current_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_current_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_current.dir/__/src/motor_current.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_current.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_current.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_dt3_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force_dt3.dir/contact_force_dt3_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_dt3_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_dt3_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_dt3_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force_dt3.dir/__/src/contact_force_dt3.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force_dt3.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force_dt3.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_dt1_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force_dt1.dir/contact_force_dt1_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_dt1_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_dt1_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_dt1_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force_dt1.dir/__/src/contact_force_dt1.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force_dt1.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force_dt1.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dbody_mdl_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/body_mdl.dir/body_mdl_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/body_mdl_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/body_mdl_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dbody_mdl_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/body_mdl.dir/__/src/body_mdl.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/body_mdl.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/body_mdl.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_max_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_max.dir/rospo_com_force_max_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_max_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_max_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_max_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_max.dir/__/src/rospo_com_force_max.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_max.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_max.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Doverall_force_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/overall_force.dir/overall_force_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/overall_force_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/overall_force_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Doverall_force_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/overall_force.dir/__/src/overall_force.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/overall_force.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/overall_force.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_in_ub_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_in_ub.dir/rospo_com_force_in_ub_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_in_ub_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_in_ub_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_in_ub_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_in_ub.dir/__/src/rospo_com_force_in_ub.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_in_ub.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_in_ub.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_lb_u_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_lb_u.dir/motor_sys_lb_u_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_lb_u_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_lb_u_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_lb_u_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_lb_u.dir/__/src/motor_sys_lb_u.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_lb_u.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_lb_u.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_force_ub_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_force_ub.dir/motor_force_ub_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_force_ub_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_force_ub_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_force_ub_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_force_ub.dir/__/src/motor_force_ub.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_force_ub.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_force_ub.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_mdl_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_mdl.dir/motor_sys_mdl_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_mdl_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_mdl_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_mdl_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_mdl.dir/__/src/motor_sys_mdl.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_mdl.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_mdl.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dturret_force_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/turret_force.dir/turret_force_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/turret_force_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/turret_force_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dturret_force_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/turret_force.dir/__/src/turret_force.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/turret_force.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/turret_force.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_force_mdl_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_force_mdl.dir/motor_force_mdl_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_force_mdl_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_force_mdl_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_force_mdl_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_force_mdl.dir/__/src/motor_force_mdl.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_force_mdl.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_force_mdl.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dsystem_model_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/system_model.dir/system_model_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/system_model_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/system_model_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dsystem_model_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/system_model.dir/__/src/system_model.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/system_model.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/system_model.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_ub_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_ub.dir/rospo_com_force_ub_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_ub_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_ub_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_ub_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_ub.dir/__/src/rospo_com_force_ub.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_ub.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_ub.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_lb_x_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_lb_x.dir/motor_sys_lb_x_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_lb_x_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_lb_x_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_lb_x_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_lb_x.dir/__/src/motor_sys_lb_x.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_lb_x.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_lb_x.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dturret_mdl_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/turret_mdl.dir/turret_mdl_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/turret_mdl_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/turret_mdl_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dturret_mdl_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/turret_mdl.dir/__/src/turret_mdl.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/turret_mdl.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/turret_mdl.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_cost_func_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_cost_func.dir/rospo_com_cost_func_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_cost_func_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_cost_func_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_cost_func_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_cost_func.dir/__/src/rospo_com_cost_func.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_cost_func.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_cost_func.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_in_lb_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_in_lb.dir/rospo_com_force_in_lb_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_in_lb_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/rospo_com_force_in_lb_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Drospo_com_force_in_lb_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/rospo_com_force_in_lb.dir/__/src/rospo_com_force_in_lb.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_in_lb.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/rospo_com_force_in_lb.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_force_lb_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_force_lb.dir/motor_force_lb_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_force_lb_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_force_lb_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_force_lb_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_force_lb.dir/__/src/motor_force_lb.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_force_lb.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_force_lb.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_ub_x_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_ub_x.dir/motor_sys_ub_x_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_ub_x_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_ub_x_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_ub_x_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_ub_x.dir/__/src/motor_sys_ub_x.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_ub_x.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_ub_x.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_dt2_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force_dt2.dir/contact_force_dt2_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_dt2_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/contact_force_dt2_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dcontact_force_dt2_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/contact_force_dt2.dir/__/src/contact_force_dt2.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force_dt2.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/contact_force_dt2.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_ub_u_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_ub_u.dir/motor_sys_ub_u_wrapper.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_ub_u_wrapper.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/pythonwraps/motor_sys_ub_u_wrapper.cpp"
+},
+{
+  "directory": "/home/matteo/Documents/UAV-Project/Repo/autogen/build/pythonwraps",
+  "command": "/usr/bin/c++ -Dmotor_sys_ub_u_EXPORTS -I/home/matteo/Documents/UAV-Project/Repo/autogen/include -I/usr/include/eigen3 -isystem /usr/include/python3.10 -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -std=gnu++11 -o CMakeFiles/motor_sys_ub_u.dir/__/src/motor_sys_ub_u.cpp.o -c /home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_ub_u.cpp",
+  "file": "/home/matteo/Documents/UAV-Project/Repo/autogen/src/motor_sys_ub_u.cpp"
+}
+]

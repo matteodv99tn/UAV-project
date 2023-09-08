@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -flto -shared  -o motor_force_ub.cpython-310-x86_64-linux-gnu.so CMakeFiles/motor_force_ub.dir/motor_force_ub_wrapper.cpp.o CMakeFiles/motor_force_ub.dir/__/src/motor_force_ub.cpp.o 
