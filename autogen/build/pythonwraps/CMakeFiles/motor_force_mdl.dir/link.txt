@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -O3 -flto -shared  -o motor_force_mdl.cpython-310-x86_64-linux-gnu.so CMakeFiles/motor_force_mdl.dir/motor_force_mdl_wrapper.cpp.o CMakeFiles/motor_force_mdl.dir/__/src/motor_force_mdl.cpp.o 

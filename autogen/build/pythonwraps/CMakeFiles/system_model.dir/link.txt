@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -O3 -flto -shared  -o system_model.cpython-310-x86_64-linux-gnu.so CMakeFiles/system_model.dir/system_model_wrapper.cpp.o CMakeFiles/system_model.dir/__/src/system_model.cpp.o 

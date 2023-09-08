@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -O3 -flto -shared  -o motor_current.cpython-310-x86_64-linux-gnu.so CMakeFiles/motor_current.dir/motor_current_wrapper.cpp.o CMakeFiles/motor_current.dir/__/src/motor_current.cpp.o 

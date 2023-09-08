@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -O3 -flto -shared  -o force_contact4.cpython-310-x86_64-linux-gnu.so CMakeFiles/force_contact4.dir/force_contact4_wrapper.cpp.o CMakeFiles/force_contact4.dir/__/src/force_contact4.cpp.o 
