@@ -22,7 +22,7 @@ W2 = np.diag([1/m__body, 1/m__body, 1/J__body])
 
 A = -gamma_P * np.eye(3)
 B = gamma_P * np.eye(3)
-K = place_poles(A, B, [-6, -6, -6]).gain_matrix
+K = place_poles(A, B, [-3, -3, -3]).gain_matrix
 
 print("A:")
 print(A)

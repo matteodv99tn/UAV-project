@@ -20,7 +20,7 @@ from simulator.visualisation import plot_rospo
 from simulator.HLController import control_law
 from simulator.functions import overall_force
 from simulator.simutils import extract_turret_state
-from simulator.setup import (t,
+from simulator.setup import (t, N_timesteps,
                              p_ref, p_ref_dot,
                              p_ref_ddot, p_ref_dddot,
                              )
@@ -41,7 +41,7 @@ print(u)
 
 
 allocator = load_model(join(".", "allocator", "models",
-                            "11_32_32_8.keras"))
+                            "11_16_16_8.keras"))
 speedcontroller = load_model(join(".", "motor_model", "models",
                                   "3_32_32_1.keras"))
 
@@ -52,31 +52,41 @@ def dynamic_func(x, u):
 
 
 def compute_controls(x: np.ndarray, uvc: np.ndarray) -> np.ndarray:
+    print("------------")
+    print("Current state:", x)
+    print("Desired:", uvc)
     u = np.zeros(2*N_turr)
     # separate the state of the different turrets and for each one compute the
     # force
-    x_turrets = [extract_turret_state(x, i) for i in range(N_turr)]
+    x_turrets = [extract_turret_state(x.copy(), i) for i in range(N_turr)]
     F_turrets = [motor_force_mdl(X) for X in x_turrets]
+    X = np.array([[F_turrets[i][0], x_turrets[i][-1]] for i in range(N_turr)])\
+          .flatten()
     # build the input for the allocator
     tmp = [[F_turrets[i][0], x_turrets[i][-1]] for i in range(N_turr)]
     x_allocator = np.concatenate((np.array(tmp).flatten(),
                                   uvc))
+    print("NN input pre-normalization:", x_allocator)
     x_allocator = alloc.normalize_x_data(x_allocator.reshape(1, -1))
+    print("NN input:", x_allocator)
     # Compute allocation as prediction of the NN
-    u_allocator = allocator.model.predict(x_allocator)
+    u_allocator = allocator.model.predict(x_allocator, verbose=0)
+    print("Prediction:", u_allocator)
     u_allocator = alloc.denormalize_y_data(u_allocator.reshape(1, -1))
+    print("Denormalized:", u_allocator)
     u_allocator = u_allocator.flatten()
+    X = X + dt_controller*u_allocator
 
     # Build the inputs for the speed controller
     for i in range(N_turr):
-        x_turr = np.concatenate((x_turrets[i][0:2],
-                                 np.array([u_allocator[2*i]])))
-        print("x_turr: ", x_turr)
-        x_turr = motor.normalize_x_data(x_turr.reshape(1, -1))
-        u_turr = speedcontroller.model.predict(x_turr)
-        u[2*i] = motor.denormalize_y_data(u_turr.reshape(1, -1))
+        xnn = x_turrets[i]
+        xnn[-1] = X[2*i]
+        xnn = motor.normalize_x_data(xnn.reshape(1, -1))
+        unn = speedcontroller.model.predict(xnn, verbose=0)
+        u[2*i] = motor.denormalize_y_data(unn.reshape(1, -1))
         u[2*i + 1] = u_allocator[2*i + 1]
 
+    print(u)
     return u
 
 
@@ -85,36 +95,29 @@ def controls(x: np.ndarray, uvc: np.ndarray) -> np.ndarray:
     x_turrets = [extract_turret_state(x.copy(), i) for i in range(N_turr)]
     F_turrets = [motor_force_mdl(X) for X in x_turrets]
     X = np.array([[F_turrets[i][0], x_turrets[i][-1]] for i in range(N_turr)])\
-          .flatten()
+          .flatten().copy()
     uall = np.zeros(2*N_turr)
     minsol = minimize(cost_function, uall, args=(X, uvc),
                       jac=True, bounds=bounds, method="SLSQP")
     uall = minsol.x
-    # print("--------------------------")
-    # print("Desired:", uvc)
-    # print("Current:", rospo_com_force(X))
-    # print("Expected:", rospo_com_force(X + dt_controller*uall))
-    # print("Cost:", minsol.fun)
     X = X + dt_controller*uall
 
     u = np.zeros(2*N_turr)
     for i in range(N_turr):
         # print("Turr #,", i, "->", x_turrets[i])
         Ftarget = F_turrets[i][0] + uall[2*i]*dt_controller
-        xnn = x_turrets[i]
+        xnn = x_turrets[i].copy()
         xnn[-1] = Ftarget
         xnn = motor.normalize_x_data(xnn.reshape(1, -1))
         u[2*i] = speedcontroller.model.predict(xnn, verbose=0)
         u[2*i] = motor.denormalize_y_data(u[2*i].reshape(1, -1))
         u[2*i + 1] = uall[2*i + 1]
-    print("Controls:", u)
 
     return u
 
 
 rospo_dynamics = Function(dynamic_func, None, None)
 
-plt.ion()
 
 bounds = [(u_lb[i], u_ub[i]) for i in range(8)]
 print("LB:", u_lb)
@@ -132,12 +135,13 @@ x[11] = tmp
 x[14] = tmp
 x[17] = tmp
 
+Uvc_hist = np.zeros((N_timesteps, 3))
+U_hist = np.zeros((N_timesteps, 2*N_turr))
+X_hist = np.zeros((N_timesteps, 6 + 3*N_turr))
+
 
 print("x: ", x)
 for k, v in enumerate(t):
-    print("------------------------")
-    print("theta:", x[2])
-    print("phis:", x[8::3])
     uvc = control_law(x, p_ref[:, k], p_ref_dot[:, k],
                       p_ref_ddot[:, k], p_ref_dddot[:, k])
     # u = compute_controls(x, uvc)
@@ -146,6 +150,10 @@ for k, v in enumerate(t):
                       x, u,
                       dt_controller, 3,
                       jacobian=False)
+    Uvc_hist[k, :] = uvc
+    U_hist[k, :] = u
+    X_hist[k, :] = x
+    plt.ion()
     plt.clf()
     plot_rospo(x, Pdes=p_ref[:, k], Fdes=uvc)
     plt.plot(p_ref[0, :], p_ref[1, :], 'k--')
@@ -153,3 +161,17 @@ for k, v in enumerate(t):
     plt.gca().set_ylim([-2, 2])
     plt.show()
     plt.pause(0.01)
+
+
+np.save("Uvc_hist.npy", Uvc_hist)
+np.save("U_hist.npy", U_hist)
+np.save("X_hist.npy", X_hist)
+
+plt.figure()
+x_coord = X_hist[:, 0]
+y_coord = X_hist[:, 1]
+plt.plot(t, x_coord, label="x")
+plt.plot(t, p_ref[0, :], label="x_ref")
+plt.plot(t, y_coord, label="y")
+plt.plot(t, p_ref[1, :], label="y_ref")
+plt.show()

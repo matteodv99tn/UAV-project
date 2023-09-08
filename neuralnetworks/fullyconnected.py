@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import tensorflow as tf
+
 from tensorflow.keras import Input
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
@@ -40,8 +42,10 @@ class FullyConnectedNN:
             *custom_layers,
             Dense(self.out_size, activation="linear")
             ])
+        # optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
         self.model.compile(optimizer="adam", loss="mse",
-                           metrics=["accuracy"])
+                           metrics=["accuracy"],
+                           )
         return self
 
     @time_execution

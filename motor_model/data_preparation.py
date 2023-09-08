@@ -4,7 +4,7 @@ import os
 
 from sklearn.preprocessing import MinMaxScaler
 
-from .config import x_lb, x_ub, u_lb, u_ub, F_lb, F_ub
+from motor_model.config import x_lb, x_ub, u_lb, u_ub, F_lb, F_ub
 
 x_data_scaler = MinMaxScaler()
 y_data_scaler = MinMaxScaler()

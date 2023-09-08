@@ -32,12 +32,12 @@ if __name__ == "__main__":
     models_list = glob(os.path.join(MODEL_DIR, "*.keras"))
     print("Available models:")
 
-    t = np.arange(0, 1, dt)
+    t = np.arange(0, 3, dt)
     N = t.size
     dF = F_ub - F_lb
     F_refs = F_lb + 0.5*dF + 0.3*dF*np.sin(2*np.pi*t)
-    plt.figure()
-    plt.plot(t, F_refs, label="reference")
+    plt.figure(figsize=(7, 3))
+    plt.plot(t, F_refs, "--", label="reference")
 
     for model_filename in models_list:
         print(f"Processing {model_filename}")
@@ -56,7 +56,14 @@ if __name__ == "__main__":
             tmp, _ = RK4.integrate(motor_mdl, Xhist[i, :], u_denorm, dt, 3)
             Xhist[i+1, :] = tmp
 
-        plt.plot(t, Fhist, label=os.path.basename(model_filename))
+        Fhist[N-1] = force(Xhist[N-1, :])
+        lbl = os.path.basename(model_filename).split(".")[0]
+        lbl = ", ".join(lbl.split("_")[1:-1])
+        plt.plot(t, Fhist, label=lbl)
 
-    plt.legend()
+    plt.xlabel("time [s]")
+    plt.ylabel("Force [N]")
+    plt.grid(linestyle="--")
+    plt.legend(loc="lower right")
+    plt.savefig(os.path.join(parentdir, "report", "Images", "motorNN.eps"), bbox_inches="tight")
     plt.show()
