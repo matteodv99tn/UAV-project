@@ -10,15 +10,15 @@ from autogen.lib.rospo_com_cost_func import \
         rospo_com_cost_func, rospo_com_cost_func_du
 
 kcost1 = 1.0
-kcost2 = 0.1
+kcost2 = 0.0
 kcost3 = 0.2
 # Weight matrix for reaching target
-W1 = np.diag([1.0, 1.0, 0.3])
+W1 = np.diag([1.0, 1.0, 0.1])
 
 # Weight matrix for staying within bounds
 W2 = np.diag([0.1, 1.0] * N_turr)
 
-W3 = np.diag([1.0, 0.1] * N_turr)
+W3 = np.diag([1.0, 0.3] * N_turr)
 
 dt_bound = 1
 
@@ -75,9 +75,15 @@ if __name__ == "__main__":
     col_names = ["state", "target", "input", "cost"]
     df = pd.DataFrame(columns=col_names)
 
-    Ntests = 400
-    Ninitcond = 60
-    Nforwardstep = 15
+    Ntests = 100
+    Ninitcond = 300
+    Nforwardstep = 10
+    Ntests = 80
+    Ninitcond = 200
+    Nforwardstep = 10
+    Ntests = 400000
+    Ninitcond = 1
+    Nforwardstep = 1
 
     Fnorm = F_max[0]
     torque_max = F_max[1]
@@ -129,9 +135,17 @@ if __name__ == "__main__":
     stop = timer()
     print(f"Average time per iteration: {(stop - start) / Nall}")
 
-    Ntests = 2000
+    Ntests = 400
+    Ninitcond = 400
+    Nforwardstep = 4
+
+    Ntests = 300
     Ninitcond = 200
-    Nforwardstep = 3
+    Nforwardstep = 4
+
+    Ntests = 400000
+    Ninitcond = 1
+    Nforwardstep = 1
 
     Nall = Ntests*Ninitcond*Nforwardstep
     xdata = np.zeros((Nall, 2*N_turr))
