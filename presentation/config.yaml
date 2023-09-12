@@ -1,0 +1,14 @@
+title: "Neural network approximator for input allocation"
+author: "Matteo Dalle Vedove"
+institute: "University of Trento - Department of Industrial Engineering"
+theme: "metropolis"
+colortheme: "beaver"
+fontsize: 16pt
+aspectratio: 1610
+date: "12-09-2023"
+lang: en-US
+section-titles: true
+toc: false
+output:
+  beamer_presentation:
+    number_section: true
